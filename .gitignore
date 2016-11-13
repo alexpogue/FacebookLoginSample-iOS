@@ -16,5 +16,4 @@ xcuserdata/
 .#*
 
 # Carthage
-Cartfile*
-Carthage/
+Carthage/Build/
