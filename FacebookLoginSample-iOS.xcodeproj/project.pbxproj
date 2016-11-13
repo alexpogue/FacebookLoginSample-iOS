@@ -12,6 +12,11 @@
 		FA8E8BB31DD83FEE003CDBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8E8BB11DD83FEE003CDBE2 /* Main.storyboard */; };
 		FA8E8BB51DD83FEE003CDBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8E8BB41DD83FEE003CDBE2 /* Assets.xcassets */; };
 		FA8E8BB81DD83FEE003CDBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8E8BB61DD83FEE003CDBE2 /* LaunchScreen.storyboard */; };
+		FA8E8BC71DD849A3003CDBE2 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8E8BC21DD849A3003CDBE2 /* Bolts.framework */; };
+		FA8E8BC81DD849A3003CDBE2 /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8E8BC31DD849A3003CDBE2 /* FacebookCore.framework */; };
+		FA8E8BC91DD849A3003CDBE2 /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8E8BC41DD849A3003CDBE2 /* FacebookLogin.framework */; };
+		FA8E8BCA1DD849A3003CDBE2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8E8BC51DD849A3003CDBE2 /* FBSDKCoreKit.framework */; };
+		FA8E8BCB1DD849A3003CDBE2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8E8BC61DD849A3003CDBE2 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,12 @@
 		FA8E8BB41DD83FEE003CDBE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA8E8BB71DD83FEE003CDBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA8E8BB91DD83FEE003CDBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA8E8BC21DD849A3003CDBE2 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Carthage/Build/iOS/Bolts.framework; sourceTree = "<group>"; };
+		FA8E8BC31DD849A3003CDBE2 /* FacebookCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookCore.framework; path = Carthage/Build/iOS/FacebookCore.framework; sourceTree = "<group>"; };
+		FA8E8BC41DD849A3003CDBE2 /* FacebookLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookLogin.framework; path = Carthage/Build/iOS/FacebookLogin.framework; sourceTree = "<group>"; };
+		FA8E8BC51DD849A3003CDBE2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		FA8E8BC61DD849A3003CDBE2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Carthage/Build/iOS/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		FA8E8BCC1DD84BDD003CDBE2 /* FacebookLoginSample-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FacebookLoginSample-iOS.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8E8BC71DD849A3003CDBE2 /* Bolts.framework in Frameworks */,
+				FA8E8BC81DD849A3003CDBE2 /* FacebookCore.framework in Frameworks */,
+				FA8E8BC91DD849A3003CDBE2 /* FacebookLogin.framework in Frameworks */,
+				FA8E8BCA1DD849A3003CDBE2 /* FBSDKCoreKit.framework in Frameworks */,
+				FA8E8BCB1DD849A3003CDBE2 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +56,7 @@
 			children = (
 				FA8E8BAC1DD83FEE003CDBE2 /* FacebookLoginSample-iOS */,
 				FA8E8BAB1DD83FEE003CDBE2 /* Products */,
+				FA8E8BC11DD849A1003CDBE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +71,7 @@
 		FA8E8BAC1DD83FEE003CDBE2 /* FacebookLoginSample-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FA8E8BCC1DD84BDD003CDBE2 /* FacebookLoginSample-iOS.entitlements */,
 				FA8E8BAD1DD83FEE003CDBE2 /* AppDelegate.swift */,
 				FA8E8BAF1DD83FEE003CDBE2 /* ViewController.swift */,
 				FA8E8BB11DD83FEE003CDBE2 /* Main.storyboard */,
@@ -62,6 +80,18 @@
 				FA8E8BB91DD83FEE003CDBE2 /* Info.plist */,
 			);
 			path = "FacebookLoginSample-iOS";
+			sourceTree = "<group>";
+		};
+		FA8E8BC11DD849A1003CDBE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA8E8BC21DD849A3003CDBE2 /* Bolts.framework */,
+				FA8E8BC31DD849A3003CDBE2 /* FacebookCore.framework */,
+				FA8E8BC41DD849A3003CDBE2 /* FacebookLogin.framework */,
+				FA8E8BC51DD849A3003CDBE2 /* FBSDKCoreKit.framework */,
+				FA8E8BC61DD849A3003CDBE2 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +104,8 @@
 				FA8E8BA61DD83FEE003CDBE2 /* Sources */,
 				FA8E8BA71DD83FEE003CDBE2 /* Frameworks */,
 				FA8E8BA81DD83FEE003CDBE2 /* Resources */,
+				FA8E8BBF1DD840B5003CDBE2 /* ShellScript */,
+				FA8E8BC01DD840EE003CDBE2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -98,6 +130,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 4HFH82RSTK;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -131,6 +168,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FA8E8BBF1DD840B5003CDBE2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKCoreKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Bolts.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookLogin.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKLoginKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		FA8E8BC01DD840EE003CDBE2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "INFO_PLIST=\"${PROJECT}/Info.plist\"\nsource FacebookAppInfo.sh\nif [ -n ${FACEBOOK_APP_ID} ]; then\n/usr/libexec/PlistBuddy -c \"Set :FacebookAppID ${FACEBOOK_APP_ID}\" ${INFO_PLIST}\nfi\nif [ -n ${FACEBOOK_DISPLAY_NAME} ]; then\n/usr/libexec/PlistBuddy -c \"Set :FacebookDisplayName ${FACEBOOK_DISPLAY_NAME}\" ${INFO_PLIST}\nfi\nif [ -n ${FACEBOOK_APP_URL_SCHEME} ]; then\n/usr/libexec/PlistBuddy -c \"Delete :CFBundleURLTypes:0:CFBundleURLSchemes\" ${INFO_PLIST}\n/usr/libexec/PlistBuddy -c \"Add :CFBundleURLTypes:0:CFBundleURLSchemes array\" ${INFO_PLIST}\n/usr/libexec/PlistBuddy -c \"Add :CFBundleURLTypes:0:CFBundleURLSchemes: string ${FACEBOOK_APP_URL_SCHEME}\" ${INFO_PLIST}\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA8E8BA61DD83FEE003CDBE2 /* Sources */ = {
@@ -261,7 +332,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "FacebookLoginSample-iOS/FacebookLoginSample-iOS.entitlements";
 				DEVELOPMENT_TEAM = 4HFH82RSTK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "FacebookLoginSample-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexpogue.FacebookLoginSample-iOS";
@@ -274,7 +350,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "FacebookLoginSample-iOS/FacebookLoginSample-iOS.entitlements";
 				DEVELOPMENT_TEAM = 4HFH82RSTK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "FacebookLoginSample-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexpogue.FacebookLoginSample-iOS";
@@ -302,6 +383,7 @@
 				FA8E8BBE1DD83FEE003CDBE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
